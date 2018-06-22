@@ -4,22 +4,23 @@ body
   height: 100vh
   width: 98%
   margin: 0px
+  background-attachment: fixed
 
 .main
   margin-left: 23%
   padding: 20px
   margin-top: 20px
 
-  .card
+  .title-link
+    text-decoration: none
+
+  .large-card
     display: block
     color: white
     font-size: 1.5em
     background-color: transparent
     box-shadow: 0px 0px 4px 1px black
     padding: 10px
-
-    .title-link
-      text-decoration: none
 
     .title
       color: black
@@ -30,14 +31,60 @@ body
       padding-top: 10px
       padding-left: 20px
       margin-top: -2vh
-      margin-left: -2vw
-      width: 98%
+      margin-left: -1%
+      width: 101%
       height: 4vh
 
     .body
       color: white
       padding-top: 10px
+      overflow: hidden
 
-  .card:hover
+      img
+
+  .large-card:hover
+    box-shadow: 0px 0px 4px 5px black
+    transition: 0.5s
+
+  .small-card-container
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+
+  .small-card
+    display: block
+    color: white
+    font-size: 1.5em
+    background-color: transparent
+    box-shadow: 0px 0px 4px 1px black
+    padding: 10px
+    margin: 10px
+    width: 400px
+    height: 400px
+
+    .title
+      color: black
+      border-radius: 200px
+      background-color: #FCBA04
+      opacity: 0.9
+      text-align: center
+      box-shadow: 0px 0px 4px 1px black
+      margin-top: 15px
+      padding-top: 10px
+      padding-left: 10px
+      padding-right: 10px
+      width: 380px
+      height: 40px
+
+    .body
+      color: white
+      padding-top: 10px
+      overflow: hidden
+
+      img
+        margin-top: 10px
+        height: 300px
+
+  .small-card:hover
     box-shadow: 0px 0px 4px 5px black
     transition: 0.5s

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-
 <html>
 
   <head>
     <title>Walter Proulx</title>
     <link rel="icon" href="images/Favicon.png">
+    <meta charset="utf-8"/>
 
     <!-- Personalized Style Guides -->
     <link rel="stylesheet" href="css/sidenav.css">
@@ -21,31 +21,21 @@
   </head>
 
   <body>
-    <div class="sidenav">
-      <a href="index.html" class="title">Walter Proulx</a>
-      <a href="#" class="main-link" id="link_coding_projects">Coding Projects</a>
-      <a href="#" class="main-link">Writing Samples</a>
-      <a href="#" class="main-link">Complete Resume</a>
-      <a href="#" class="main-link">Aspirations</a>
-      <a href="#" class="main-link">Resources</a>
-    </div>
+    <div id="sidenav"></div>
 
     <div class="main">
-      <div id="content">
-        <!-- main content will load here -->
-      </div>
+      <div id="content"></div>
     </div>
 
     <script type="text/javascript">
-      $("#link_coding_projects").click(function() {
-        $("#content").load("coding_projects.html");
+      $(document).ready(function() {
+        $("#sidenav").load("layouts/sidenav.html");
+        $("#content").load("layouts/home.html");
       });
 
       var pathname = window.location.pathname;
-
       console.log(pathname);
     </script>
-
   </body>
 
 </html>

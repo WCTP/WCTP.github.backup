@@ -1,0 +1,24 @@
+<div class="sidenav">
+  <a href="index.html" class="title">Walter Proulx</a>
+  <a href="#coding-projects" class="main-link" id="link_coding_projects">Code</a>
+  <a href="#writing-samples" class="main-link">Writing</a>
+  <a href="#resume" class="main-link">Resume</a>
+  <a href="#aspirations" class="main-link">Aspirations</a>
+  <a href="#resources" class="main-link" id="link_resources">Resources</a>
+  <div class="social-media-container">
+    <a href="https://github.com/WCTP" target="_blank"><img src="images/social_media_icons/Github.svg" alt="Github Icon"></a>
+    <a href="https://www.linkedin.com/in/walterproulx" target="_blank"><img src="images/social_media_icons/Linkedin.svg" alt="Linkedin Icon"></a>
+    <a href="https://twitter.com/walter_proulx" target="_blank"><img src="images/social_media_icons/Twitter.svg" alt="Twitter Icon"></a>
+    <a href="http://scholarscholar.com/" target="_blank"><img src="images/social_media_icons/YouTube.svg" alt="YouTube Icon"></a>
+  </div>
+</div>
+
+<script type="text/javascript">
+  $("#link_coding_projects").click(function() {
+    $("#content").load("layouts/content/coding_projects_content/home.html");
+  });
+
+  $("#link_resources").click(function() {
+    $("#content").load("layouts/resources.html");
+  });
+</script>
