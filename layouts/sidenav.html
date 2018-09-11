@@ -1,7 +1,7 @@
 <div class="sidenav">
   <a href="index.html" class="title">Walter Proulx</a>
   <a href="#coding-projects" class="main-link" id="link_coding_projects">Code</a>
-  <a href="#writing-samples" class="main-link">Writing</a>
+  <a href="#writing-samples" class="main-link" id="link_writing_samples">Writing</a>
   <a href="#resume" class="main-link" id="link_resume">Resume</a>
   <a href="#aspirations" class="main-link">Aspirations</a>
   <a href="#resources" class="main-link" id="link_resources">Resources</a>
@@ -16,6 +16,9 @@
 <script type="text/javascript">
   $("#link_coding_projects").click(function() {
     $("#content").load("layouts/content/coding_projects_content/home.html");
+  });
+  $("#link_writing_samples").click(function() {
+    $("#content").load("layouts/content/writing_samples_content/home.html");
   });
   $("#link_resume").click(function() {
     $("#content").load("layouts/content/resume.html");
